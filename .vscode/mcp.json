@@ -1,0 +1,17 @@
+{
+	"servers": {
+		"SentinelMCP-Data": {
+			"url": "https://sentinel.microsoft.com/mcp/data-exploration",
+			"type": "http"
+		},
+		"SentinelMCP-Triage": {
+			"url": "https://sentinel.microsoft.com/mcp/triage",
+			"type": "http"
+		},
+		"Learn-MCP": {
+			"url": "https://learn.microsoft.com/api/mcp",
+			"type": "http"
+		}
+	},
+	"inputs": []
+}

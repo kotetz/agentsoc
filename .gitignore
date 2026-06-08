@@ -1,0 +1,51 @@
+# =============================================================================
+# AI SOC ハーネス — .gitignore
+# =============================================================================
+# ポリシー:
+#   ✅ push する: SOC 共通ナレッジ (instructions / skills / prompts / mcp 設定)
+#   ❌ push しない: テナント固有の Copilot Studio エージェント実装 / 生成レポート
+# =============================================================================
+
+# --- テナント固有の Copilot Studio エージェント実装 ---------------------------
+# .github/agents/ 直下のサブ ディレクトリはすべて非公開扱い
+# (各実装が tenant ID, KQL workspace ID, SharePoint URL 等を含むため)
+.github/agents/*/
+# ただし README.md と将来のテンプレート (_template/) は push する
+!.github/agents/_template/
+!.github/agents/README.md
+
+# --- 生成された調査レポート (アナリスト個別の調査結果) -----------------------
+.github/reports/
+
+# --- デプロイ実行時に生成されるテナント固有の設定 -----------------------------
+**/deployment-config.json
+**/*.secret.json
+**/*.pfx
+**/*.cer
+
+# --- Power Platform / pac CLI 生成物 -----------------------------------------
+**/bin/
+**/obj/
+**/*.zip
+**/SolutionPackage/
+
+# --- VS Code ローカル設定 (mcp.json は除外しない) ----------------------------
+.vscode/*
+!.vscode/mcp.json
+!.vscode/extensions.json
+!.vscode/settings.example.json
+
+# --- メモリ / セッション履歴 --------------------------------------------------
+/memories/session/
+
+# --- OS / エディタ ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# --- ログ / 一時ファイル -----------------------------------------------------
+*.log
+*.tmp
+.tmp/

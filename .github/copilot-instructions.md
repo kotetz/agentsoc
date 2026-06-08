@@ -26,7 +26,7 @@
 > **Harness Plan**
 > - **Instructions**: 読み込む `.github/instructions/*.md` のファイル名（applyTo で自動適用される分も明示）
 > - **Skills**: 呼び出す `.github/skills/*/SKILL.md`（pivot-* / triage-*）
-> - **MCP Servers**: 使用する MCP サーバー名（例: `SentinelMCP-Data`, `SentinelMCP-Triage`, `Learn-MCP`）
+> - **MCP Servers**: 使用する MCP サーバー名（例: `SentinelMCP-Data`, `SentinelMCP-Triage`, `SentinelMCP-AgentCreation`, `Learn-MCP`）
 > - **Tools**: 主要ツール（`grep_search`, `read_file`, `microsoft_docs_search`, etc.）
 > - **Rationale**: なぜこの組み合わせか（1〜2 行）
 ```
@@ -43,6 +43,7 @@
 |---|---|---|
 | `SentinelMCP-Data` | `https://sentinel.microsoft.com/mcp/data-exploration` | KQL 実行 / スキーマ取得 / テーブル探索 |
 | `SentinelMCP-Triage` | `https://sentinel.microsoft.com/mcp/triage` | インシデント / アラート トリアージ補助 |
+| `SentinelMCP-AgentCreation` | `https://sentinel.microsoft.com/mcp/security-copilot-agent-creation` | Security Copilot Agent 作成 / プロモーション支援 |
 | `Learn-MCP` | `https://learn.microsoft.com/api/mcp` | Microsoft Learn 公式ドキュメント参照 |
 
 ワークスペース ID: **`<ワークスペース名>`** = `<ご自身の Sentinel データレイク workspace ID をここに記入>`

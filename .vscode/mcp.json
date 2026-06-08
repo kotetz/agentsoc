@@ -11,6 +11,10 @@
 		"Learn-MCP": {
 			"url": "https://learn.microsoft.com/api/mcp",
 			"type": "http"
+		},
+		"SentinelMCP-AgentCreation": {
+			"url": "https://sentinel.microsoft.com/mcp/security-copilot-agent-creation",
+			"type": "http"
 		}
 	},
 	"inputs": []
